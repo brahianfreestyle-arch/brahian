@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Caça ao Tesouro do Brasil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🗺️ EM BUSCA DO TESOURO PERDIDO 🇧🇷</h1>
+            <div class="status-bar">
+                <span>❤️ Vidas: <strong id="vidas">3</strong></span>
+                <span>⭐ Pontos: <strong id="pontos">0</strong></span>
+            </div>
+        </header>
+
+        <main>
+            <div class="imagem-container">
+                <img id="imagem-cenario" src="https://images.unsplash.com/photo-1597839219216-a773cb2473e4?w=600&auto=format&fit=crop" alt="Cenário do jogo">
+            </div>
+
+            <div id="historia-box">
+                <p id="texto-historia">Carregando aventura...</p>
+            </div>
+
+            <div id="opcoes-box" class="botoes-container">
+                <!-- Os botões aparecem aqui via JavaScript -->
+            </div>
+        </main>
+
+        <footer>
+            <button id="btn-reiniciar" onclick="iniciarJogo()" class="btn-reset">🔄 Recomeçar Jogo</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
